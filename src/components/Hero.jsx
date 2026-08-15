@@ -4,7 +4,7 @@ import { useHoverStyle } from "../hooks/useHoverStyle.js";
 function BadgeLink() {
   const { t } = useLanguage();
   const [style, hoverHandlers] = useHoverStyle(
-    { display: "flex", alignItems: "center", gap: 12, border: "1px solid #DCE3DD", padding: "7px 7px 7px 14px", fontSize: 13.5, color: "#4A544D" },
+    { display: "flex", alignItems: "center", gap: 12, borderWidth: 1, borderStyle: "solid", borderColor: "#DCE3DD", padding: "7px 7px 7px 14px", fontSize: 13.5, color: "#4A544D" },
     { borderColor: "#0F5C3F", color: "#0F1512" }
   );
   return (
@@ -28,7 +28,7 @@ function PrimaryCta() {
 function CallCta() {
   const { t } = useLanguage();
   const [style, hoverHandlers] = useHoverStyle(
-    { border: "1px solid #C9CFC8", color: "#0F1512", fontSize: 15, fontWeight: 600, padding: "17px 30px" },
+    { borderWidth: 1, borderStyle: "solid", borderColor: "#C9CFC8", color: "#0F1512", fontSize: 15, fontWeight: 600, padding: "17px 30px" },
     { borderColor: "#0F1512" }
   );
   return <a href="tel:+46704526069" style={style} {...hoverHandlers}>{t("Call 070 452 60 69")}</a>;

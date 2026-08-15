@@ -27,7 +27,7 @@ const CARDS = [
 function AudienceCard({ card }) {
   const { t } = useLanguage();
   const [style, hoverHandlers] = useHoverStyle(
-    { minWidth: 0, border: "1px solid #E8EBE7", padding: 34, display: "flex", flexDirection: "column", gap: 22, transition: "transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1)" },
+    { minWidth: 0, borderWidth: 1, borderStyle: "solid", borderColor: "#E8EBE7", padding: 34, display: "flex", flexDirection: "column", gap: 22, transition: "transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1)" },
     { transform: "translateY(-5px)", borderColor: "#C9CFC8" }
   );
   return (
