@@ -35,7 +35,7 @@ function makeRef() {
   return "VK-2026-" + String(Math.floor(1000 + Math.random() * 9000));
 }
 
-const fieldStyle = { boxSizing: "border-box", width: "100%", minWidth: 0, border: "1px solid rgba(255,255,255,0.24)", background: "rgba(255,255,255,0.05)", outline: "none", color: "#FFFFFF", fontFamily: "Switzer, sans-serif", fontSize: 15.5, padding: "13px 14px", transition: "border-color 0.22s ease, background 0.22s ease" };
+const fieldStyle = { boxSizing: "border-box", width: "100%", minWidth: 0, borderWidth: 1, borderStyle: "solid", borderColor: "rgba(255,255,255,0.24)", background: "rgba(255,255,255,0.05)", outline: "none", color: "#FFFFFF", fontFamily: "Switzer, sans-serif", fontSize: 15.5, padding: "13px 14px", transition: "border-color 0.22s ease, background 0.22s ease" };
 const invalidStyle = { borderColor: "#FF9B8A", background: "rgba(255,110,90,0.08)" };
 const rowLabelStyle = { display: "grid", gridTemplateColumns: "minmax(0, clamp(84px, 13vw, 132px)) minmax(0, 1fr)", gap: "clamp(12px, 1.4vw, 18px)", alignItems: "start", padding: "14px 22px", cursor: "text", borderBottom: "1px solid rgba(255,255,255,0.16)" };
 const rowSpanStyle = { fontFamily: "'IBM Plex Mono', monospace", fontSize: 11.5, letterSpacing: "0.1em", textTransform: "uppercase", color: "#B9C1BA", paddingTop: 13 };
@@ -53,7 +53,7 @@ function SubmitButton({ disabled }) {
 function ResetButton({ onClick }) {
   const { t } = useLanguage();
   const [style, hoverHandlers] = useHoverStyle(
-    { marginTop: 10, border: "1px solid rgba(255,255,255,0.24)", background: "transparent", color: "#FFFFFF", fontFamily: "Switzer, sans-serif", fontWeight: 600, fontSize: 14, padding: "13px 22px", cursor: "pointer", transition: "border-color 0.22s ease" },
+    { marginTop: 10, borderWidth: 1, borderStyle: "solid", borderColor: "rgba(255,255,255,0.24)", background: "transparent", color: "#FFFFFF", fontFamily: "Switzer, sans-serif", fontWeight: 600, fontSize: 14, padding: "13px 22px", cursor: "pointer", transition: "border-color 0.22s ease" },
     { borderColor: "#1FA971" }
   );
   return <button type="button" onClick={onClick} style={style} {...hoverHandlers}>{t("Send another request")}</button>;
