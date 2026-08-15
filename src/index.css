@@ -1,9 +1,14 @@
 * { box-sizing: border-box; }
-body { margin: 0; background: #FFFFFF; color: #0F1512; font-family: Switzer, system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+body { margin: 0; background: #FFFFFF; color: #0F1512; font-family: Switzer, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
 a { color: #0F5C3F; text-decoration: none; }
 a:hover { color: #0F1512; }
 summary::-webkit-details-marker { display: none; }
-html { scroll-behavior: smooth; }
+/* overflow-x here (not on body) keeps <html> as the one true scroll
+   container. Putting it on body instead trips a CSS quirk where overflow-y
+   auto-promotes to `auto`, making body its own independent scroller — which
+   left the scroll-snap machinery below confused about which element it was
+   actually snapping, a real contributor to the jerky scroll-snap corrections. */
+html { scroll-behavior: smooth; overflow-x: hidden; }
 button { font: inherit; }
 img { max-width: 100%; display: block; }
 
@@ -15,7 +20,7 @@ img { max-width: 100%; display: block; }
   html { scroll-snap-type: y proximity; }
   section {
     box-sizing: border-box; min-height: 100vh; display: flex; align-items: center;
-    scroll-snap-align: start; scroll-snap-stop: always; padding-top: 76px;
+    scroll-snap-align: start; padding-top: 76px;
   }
   section > div { width: 100%; padding-top: 48px !important; padding-bottom: 48px !important; }
   section#top { padding-top: 76px; }
