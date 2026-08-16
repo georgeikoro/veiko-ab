@@ -51,7 +51,11 @@ export default function Footer() {
 
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "44px 40px 0" }}>
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.16)", paddingTop: 22, display: "flex", justifyContent: "space-between", gap: 24, flexWrap: "wrap", fontFamily: "'IBM Plex Mono', monospace", fontSize: 11.5, letterSpacing: "0.06em", textTransform: "uppercase", color: "#8D968E" }}>
-          <span>{t("© 2026 Veiko AB · Org.nr 000000-0000 · F-skatt · placeholder details, swap before launch")}</span>
+          <span style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
+            <span>© 2026 Veiko AB · Org.nr 559539-9998</span>
+            <a href="/villkor" style={{ color: "#8D968E" }}>{t("Terms")}</a>
+            <a href="/integritetspolicy" style={{ color: "#8D968E" }}>{t("Privacy policy")}</a>
+          </span>
           <BackToTop />
         </div>
       </div>

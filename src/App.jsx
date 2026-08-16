@@ -1,6 +1,8 @@
 import { LanguageProvider } from "./i18n/LanguageContext.jsx";
 import { useIntroSequence } from "./hooks/useIntroSequence.js";
 import { useScrollReveal } from "./hooks/useScrollReveal.js";
+import Terms from "./pages/Terms.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 
 import IntroOverlay from "./components/IntroOverlay.jsx";
 import ProgressBar from "./components/ProgressBar.jsx";
@@ -52,6 +54,9 @@ function Page() {
 }
 
 export default function App() {
+  const path = window.location.pathname;
+  if (path === "/villkor") return <Terms />;
+  if (path === "/integritetspolicy") return <PrivacyPolicy />;
   return (
     <LanguageProvider>
       <Page />
