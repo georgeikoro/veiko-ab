@@ -161,3 +161,16 @@ footer [data-logo]:hover [data-word] { color: #1FA971; }
   .comparison-wrap { overflow-x: auto; }
   .comparison-grid { min-width: 560px; }
 }
+
+/* legal pages (terms, privacy policy) */
+.legal-body h2 { margin: 44px 0 6px; font-size: 21px; font-weight: 700; letter-spacing: -0.01em; color: #0F1512; }
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body h3 { margin: 26px 0 4px; font-size: 16.5px; font-weight: 600; color: #0F1512; }
+.legal-body p { margin: 14px 0; }
+.legal-body ul, .legal-body ol { margin: 14px 0; padding-left: 22px; }
+.legal-body li { margin: 6px 0; }
+.legal-body a { text-decoration: underline; text-underline-offset: 2px; }
+.legal-body strong { color: #0F1512; font-weight: 600; }
+.legal-body table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14.5px; }
+.legal-body th, .legal-body td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #ECEEEA; vertical-align: top; }
+.legal-body th { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #6B756E; font-weight: 500; }

@@ -15,9 +15,9 @@ export default function About() {
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "128px 40px 0" }}>
         <div className="why-row" style={{ display: "grid", gridTemplateColumns: "minmax(0, 1fr) minmax(0, 0.85fr)", gap: 72, alignItems: "center" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 26 }}>
-            <SectionKicker index="[05]" eyebrow="About us" heading="Same voice on the phone. Same hands on the wheel." />
+            <SectionKicker index="[05]" eyebrow="About us" heading="One accountable team. No call centre in between." />
             <p style={{ margin: 0, maxWidth: "50ch", fontSize: 16.5, lineHeight: 1.75, color: "#4A544D" }}>
-              {t("Brothers Victor and George Ikoro moved to Sweden from Nigeria four years ago. Veiko started in Kista in 2024, with a phone number and a licence. Victor drives, George takes the calls. We still work out of a yard there and the calls still come to us — which is why the price you are quoted comes from someone who knows what is already booked that day.")}
+              {t("Veiko AB was founded in Kista in 2024 to close a gap we kept running into: deliveries and small moves in Stockholm get quoted by one person, scheduled by another, and driven by someone who has never spoken to the customer. We built Veiko around one accountable team instead — a fixed price before we load, and the same crew from pickup to drop-off. The company is owned and run by brothers Victor and George Ikoro, who moved to Sweden from Nigeria and started it with one van and a phone number.")}
             </p>
             <p style={{ margin: 0, maxWidth: "50ch", fontSize: 16.5, lineHeight: 1.75, color: "#4A544D" }}>
               {t("We are not trying to be a national carrier. We know the streets inside tullarna, which courtyards have a lift, and where a 3.5-tonne van will not fit. That is the whole business.")}
