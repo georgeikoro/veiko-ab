@@ -50,7 +50,7 @@ export default function Audiences() {
     <section>
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "128px 40px 0" }}>
         <div style={{ maxWidth: 620, marginBottom: 56 }}>
-          <SectionKicker index="[06]" eyebrow="Who we work with" heading="Veiko for both sides of the city" />
+          <SectionKicker index="[06]" eyebrow="Who we work with" heading="The same crew for a one-off move or a standing contract" />
         </div>
         <div className="audiences-grid" style={{ display: "grid", gridTemplateColumns: "minmax(0, 1fr) minmax(0, 1fr)", gap: 24 }}>
           {CARDS.map((c) => <AudienceCard key={c.title} card={c} />)}

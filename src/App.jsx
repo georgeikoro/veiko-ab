@@ -18,7 +18,6 @@ import Audiences from "./components/Audiences.jsx";
 import Coverage from "./components/Coverage.jsx";
 import Pricing from "./components/Pricing.jsx";
 import Comparison from "./components/Comparison.jsx";
-import Testimonials from "./components/Testimonials.jsx";
 import PhotoStrip from "./components/PhotoStrip.jsx";
 import FAQ from "./components/FAQ.jsx";
 import Quote from "./components/Quote.jsx";
@@ -44,7 +43,6 @@ function Page() {
       <Coverage />
       <Pricing />
       <Comparison />
-      <Testimonials />
       <PhotoStrip />
       <FAQ />
       <Quote />

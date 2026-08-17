@@ -42,7 +42,7 @@ export default function Coverage() {
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" style={{ flex: "none" }}><path d="M2 12h20M14 4l8 8-8 8" stroke="#0F1512" strokeWidth="3" /></svg>
                 {t("On request")}
               </span>
-              <span style={{ fontSize: 15, lineHeight: 1.7, color: "#4A544D" }}>Uppsala, Södertälje, Arlanda and Bromma.</span>
+              <span style={{ fontSize: 15, lineHeight: 1.7, color: "#4A544D" }}>{t("Uppsala, Södertälje, Arlanda and Bromma.")}</span>
             </div>
             <CheckPostcodeLink />
           </div>

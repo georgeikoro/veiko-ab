@@ -34,8 +34,8 @@ export default function Services() {
     <section id="services">
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "128px 40px 0" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", alignItems: "end", gap: "32px 56px", marginBottom: 56 }}>
-          <SectionKicker index="[01]" eyebrow="What we do" heading="Four services, one van team" />
-          <p style={{ margin: 0, maxWidth: "44ch", fontSize: 16.5, lineHeight: 1.7, color: "#4A544D" }}>{t("Four things we do. If it fits in a van and it is in Stockholm, ask us.")}</p>
+          <SectionKicker index="[01]" eyebrow="What we do" heading="If it fits in the van, it is our job" />
+          <p style={{ margin: 0, maxWidth: "44ch", fontSize: 16.5, lineHeight: 1.7, color: "#4A544D" }}>{t("Packages, food, small moves, junk — one crew, one van, right across Stockholm.")}</p>
         </div>
         <div className="services-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, minmax(0, 1fr))", gap: 24 }}>
           {CARDS.map((c) => <ServiceCard key={c.n} card={c} />)}

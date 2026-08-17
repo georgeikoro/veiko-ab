@@ -25,7 +25,7 @@ export default function About() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2, minmax(0, 1fr))", borderTop: "1px solid #ECEEEA" }}>
               {FACTS.map((f, i) => (
                 <span key={f.label} style={{ display: "flex", justifyContent: "space-between", gap: 16, padding: i % 2 === 0 ? "14px 20px 14px 0" : "14px 0 14px 20px", borderBottom: "1px solid #ECEEEA", borderLeft: i % 2 === 1 ? "1px solid #ECEEEA" : undefined, fontSize: 15 }}>
-                  {t(f.label)}<span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 13.5, color: "#6B756E" }}>{f.label === "Hours" ? t(f.value) : f.value}</span>
+                  {t(f.label)}<span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 13.5, color: "#6B756E" }}>{f.label === "Hours" || f.label === "Cover" ? t(f.value) : f.value}</span>
                 </span>
               ))}
             </div>
