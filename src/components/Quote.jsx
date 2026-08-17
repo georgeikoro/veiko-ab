@@ -17,7 +17,7 @@ export default function Quote() {
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "104px 40px", display: "grid", gridTemplateColumns: "minmax(0, 0.95fr) minmax(0, 1.05fr)", gap: 72, alignItems: "center" }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 26 }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-            <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 12.5, color: "#8D968E" }}>[12]</span>
+            <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 12.5, color: "#8D968E" }}>[11]</span>
             <span style={{ fontSize: 13, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", color: "#1FA971" }}>{t("Free quote")}</span>
             <h2 style={{ margin: 0, fontWeight: 700, fontSize: "clamp(38px, 4.4vw, 58px)", lineHeight: 1.02, letterSpacing: "-0.04em" }}>
               {t("Tell us what")}<br />{t("needs moving")}

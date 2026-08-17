@@ -32,10 +32,10 @@ export default function FAQ() {
     <section id="faq">
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "128px 40px 0", display: "grid", gridTemplateColumns: "minmax(0, 0.8fr) minmax(0, 1.2fr)", gap: 72 }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 12.5, color: "#7E887F" }}>[11]</span>
+          <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: 12.5, color: "#7E887F" }}>[10]</span>
           <span style={{ fontSize: 13, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", color: "#0F5C3F" }}>{t("Questions")}</span>
           <h2 style={{ margin: 0, fontSize: "clamp(32px, 3.6vw, 46px)", fontWeight: 600, lineHeight: 1.1, letterSpacing: "-0.03em" }}>{t("Before you book")}</h2>
-          <span style={{ fontSize: 16, lineHeight: 1.7, color: "#4A544D", maxWidth: "30ch", paddingTop: 4 }}>{t("Anything else, ring us. One of us picks up between 07:00 and 20:00.")}</span>
+          <span style={{ fontSize: 16, lineHeight: 1.7, color: "#4A544D", maxWidth: "30ch", paddingTop: 4 }}>{t("Anything else, ring us — a person picks up, 07:00 to 20:00.")}</span>
         </div>
         <div style={{ minWidth: 0, display: "flex", flexDirection: "column" }}>
           {ITEMS.map((item) => <FaqItem key={item.q} item={item} />)}

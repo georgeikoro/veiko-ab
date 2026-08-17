@@ -14,7 +14,7 @@ export default function HowItWorks() {
     <section id="how">
       <div style={{ maxWidth: 1240, margin: "0 auto", padding: "128px 40px 0" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", alignItems: "end", gap: "32px 56px", marginBottom: 56 }}>
-          <SectionKicker index="[03]" eyebrow="How it works" heading="Four steps, no surprises" />
+          <SectionKicker index="[03]" eyebrow="How it works" heading="From a phone call to a photo in your inbox" />
           <p style={{ margin: 0, maxWidth: "44ch", fontSize: 16.5, lineHeight: 1.7, color: "#4A544D" }}>{t("Most jobs are priced in under an hour. Nothing moves until you have said yes to the number.")}</p>
         </div>
         <div className="how-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, minmax(0, 1fr))", gap: 40 }}>

@@ -1,10 +1,10 @@
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 
 const STATS = [
-  { figure: "2 hrs", color: "#0F5C3F", caption: "average pickup time inside the city" },
-  { figure: "98%", caption: "arrived inside the window we promised" },
-  { figure: "6 400", caption: "jobs since we started in 2024" },
-  { figure: "4.9", caption: "average rating over 340 reviews" },
+  { figure: "2 hrs", color: "#0F5C3F", caption: "average pickup inside the same-day zone" },
+  { figure: "1", caption: "driver, start to finish — no handoffs between vans" },
+  { figure: "100%", caption: "of jobs get a photo the moment they are done" },
+  { figure: "0", caption: "subcontractors — every job driven by us" },
 ];
 
 export default function StatsBand() {
